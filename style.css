@@ -1,0 +1,139 @@
+/*Geral*/
+*
+{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #014040;
+}
+
+/*Conteudo Principal*/
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    height: 70vh;
+}
+
+p 
+{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+}
+
+.btd, .btd-placar
+{
+    cursor: pointer;
+    width: 5vw;
+    font-weight: bolder;
+}
+
+
+
+#userInput
+{
+    text-align: center;
+    width: 8vw;
+}
+
+h1 
+{
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteudo
+{
+    color: white;
+    min-height: 12vh; 
+    width: 90vw; 
+    max-width: 500px; 
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 4%;
+    background-color: #798C87;
+}
+
+.conteudo.expandido {
+    height: auto; 
+}
+
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+.imagem
+{
+    position: relative;
+    margin-left: 20px;
+}
+
+
+@media (min-width: 600px) and (max-width: 1522px) {
+
+    .btd, .btd-placar
+    {
+        width: 100px;
+    }
+    #userInput 
+    {
+        width: 150px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 550px) {
+    p 
+    {
+        text-align: left;
+        font-size: 1.1rem;
+        width: 85vw;
+    }
+    h1 
+    {
+        font-size: 1.6rem;
+    }
+    .btd, .btd-placar
+    {
+        width: 70vw;
+    }
+
+    #userInput 
+    {
+        width: 70vw;
+    }
+
+    
+    .imagem img
+    {
+        width: 55vw;
+    }
+
+    footer p 
+   {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    }
+
+}
